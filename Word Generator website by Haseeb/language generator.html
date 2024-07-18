@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+
+
+<body>
+    <div class="banner">
+
+        <!-- navbar -->
+        <div class="topnav" id="myTopnav">
+            <div class="items">
+                <!-- <img src="C:\Users\Haseeb Ghazi\Downloads\logo-removebg-preview (1).png" alt="" class="img-logo"> -->
+                <a href="" class="" style="margin-top: 0px;"><img src="./SailPoint-Logo-RGB-Color.png" width="150px" height="50px" alt=""></a>
+                <a href="#sentence">Sentence/Word</a>
+                <a href="#celebrity">Celebrity/Artist</a>
+                <a href="#creditcard">Credit Card</a>
+                <a href="#entertainment">Entertainment</a>
+                <a href="#name">Name</a>
+                <a href="#text">Text/Font</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- <div class="searchbox">
+                    <input type="text" placeholder="Search here">
+                    <button class="btn"><i class="fas fa-search" style="color: white;"></i></button>
+
+                </div> -->
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+
+                </script>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+
+            <div class="container wrapper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu"
+                        aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span></button><a class="navbar-brand visible-xs-block white" href="/">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"></i>Ocean of Words
+                    </a>
+                </div>
+                <hr style="margin-top: 40px;">
+
+                <div class="navbar-collapse collapse in" id="top-menu" aria-expanded="true">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#sentence">Sentence/Word</a></li>
+                        <li><a href="#celebrity">Celebrity/Artist</a></li>
+                        <li><a href="#creditcard">Credit Card</a></li>
+                        <li><a href="#entertainment">Entertainment</a></li>
+                        <li><a href="#sports">Sports</a></li>
+                        <li class="hidden-sm"><a href="#name">Name</a></li>
+                        <li class="hidden-sm"><a href="#text">Text/Font</a></li>
+                        <!-- <div class="searchbox">
+                            <input type="text" placeholder="Search here">
+                            <button class="btn"><i class="fas fa-search" style="color: white;"></i></button>
+
+                        </div> -->
+
+                </div>
+                </ul>
+            </div>
+
+        </nav>
+        </section>
+        <!-- container  -->
+        <section id="container " style="width: 90%;
+        margin: 40px auto;">
+            <div class="content banner">
+                <div class="left-side">
+
+
+                    <div id="sentence">
+                        <h1>
+                            <a href="/word-generator" target="_blank"><span class="left-most"><i
+                                        class="fa fa-home"></i>Random Chinese Sentence Generator</span></a>
+
+
+                        </h1>
+                        <hr style="margin:12px;">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label class="">Language:</label>
+
+                                <select>
+                                    <option value="0">Chinese</option>
+                                    <option value="noun">English</option>
+                                    <option value="adjective">Arabic</option>
+                                    <option value="verb">French</option>
+                                    <option value="adverb">Punjabi</option>
+                                    <option value="transitive verb">German</option>
+                                    <option value="intransitive verb">Spanish</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="">Contain:</label>
+
+                                <input type="text" class="form-control" placeholder="Chinese Words Contain" name="contain" value="">
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="">Quantity:</label>
+
+                                <input type="text" class="form-control" placeholder="Number(0-9)" name="contain"
+                                    value="" >
+                            </div>
+                            <button class=" chinese-btn"> <i class="fas fa-sync-alt"></i>New Random Chinese Brand Generator</button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="words-container">
+
+                        <div class="chinese">
+                            <div class="chinese-inner">
+                                <li class="col-sm-12">
+                                    <p class="grey">Random sentence 1</p>
+                                    <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                    <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                            title="hide translation"><i
+                                                class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                            translation: Butler Asia Pacific Company is a wholly owned subsidiary of
+                                            Butler Manufacturing Company of USA, and it is the material supplier in the
+                                            field of Pre-Engineered Metal Building (PEMB).</span></p>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="chinese">
+                            <div class="chinese-inner">
+                                <li class="col-sm-12">
+                                    <p class="grey">Random sentence 2</p>
+                                    <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                    <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                            title="hide translation">
+                                            <i
+                                                class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                            translation: Butler Asia Pacific Company is a wholly owned subsidiary of
+                                            Butler Manufacturing Company of USA, and it is the material supplier in the
+                                            field of Pre-Engineered Metal Building (PEMB).</span></p>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="chinese">
+
+                            <div class="chinese-inner">
+                                <li class="col-sm-12">
+                                    <p class="grey">Random sentence 3</p>
+                                    <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                    <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                            title="hide translation"><i
+                                                class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                            translation: Butler Asia Pacific Company is a wholly owned subsidiary of
+                                            Butler Manufacturing Company of USA, and it is the material supplier in the
+                                            field of Pre-Engineered Metal Building (PEMB).</span></p>
+                                </li>
+                            </div>
+                        </div>
+
+                        <div class="chinese">
+
+                            <div class="chinese-inner">
+                                <li class="col-sm-12">
+                                    <p class="grey">Random sentence 4</p>
+                                    <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                    <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                            title="hide translation"><i
+                                                class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                            translation: Butler Asia Pacific Company is a wholly owned subsidiary of Butler
+                                            Manufacturing Company of USA, and it is the material supplier in the field of
+                                            Pre-Engineered Metal Building (PEMB).</span></p>
+                                </li>
+                            </div>
+                         
+                        </div>
+
+                        <div class="chinese">
+                            <div class="chinese-inner">
+                                <li class="col-sm-12">
+                                    <p class="grey">Random sentence 5</p>
+                                    <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                    <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                            title="hide translation"><i
+                                                class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                            translation: Butler Asia Pacific Company is a wholly owned subsidiary of
+                                            Butler Manufacturing Company of USA, and it is the material supplier in the
+                                            field of Pre-Engineered Metal Building (PEMB).</span></p>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="chinese">
+
+                            <div class="chinese-inner"><li class="col-sm-12">
+                                <p class="grey">Random sentence 6</p>
+                                <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                        title="hide translation"><i
+                                            class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                        translation: Butler Asia Pacific Company is a wholly owned subsidiary of Butler
+                                        Manufacturing Company of USA, and it is the material supplier in the field of
+                                        Pre-Engineered Metal Building (PEMB).</span></p>
+                            </li></div>
+                            
+                        </div>
+
+
+                        <div class="chinese">
+
+                            <div class="chinese-inner"><li class="col-sm-12">
+                                <p class="grey">Random sentence 7</p>
+                                <p class="font-18"><b><span>巴特勒亚太公司是美国巴特勒制造公司的独资子公司，它是预制式钢结构建筑的材料供应商。</span></b></p>
+                                <p class="trans"><span class="btn btn-xs btn-default spec-trans"
+                                        title="hide translation"><i
+                                            class="fa fa-eye-slash no-margin"></i></span>&nbsp;&nbsp;<span>English
+                                        translation: Butler Asia Pacific Company is a wholly owned subsidiary of Butler
+                                        Manufacturing Company of USA, and it is the material supplier in the field of
+                                        Pre-Engineered Metal Building (PEMB).</span></p>
+                            </li></div>
+                            
+                        </div>
+                        <button class="btn-blue"> <i class="fas fa-sync-alt"></i>New Random Chinese Brand
+                            Generator</button>
+                    </div>
+
+
+                </div>
+                <div class="right-side">
+                    <div class="popular">
+                        <div class="list-group">
+                            <!-- <p class="right-list-title"><i class="fa fa-fire"></i>Popular</p> -->
+                            <ul>
+                                <li theLittleDetails="Click here" style="color:#4A55A2 ;">Popular</li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 " ;>Number Generator</li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 ">Title Generator</li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 " ;>Others</li>
+                                <ul>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+    </div>
+    </section>
+    <section id="home-foot">
+        <div class="container">
+
+            <span class="left-most">Copyright © 2023 CoolGenerator.com All rights reserved.</span>
+
+            <span class="right-most">
+                <ul class="list-unstyled pull-right clearfix state">
+                    <li><a href="mailto:coolgenerator@outlook.com" target="_blank">Contact Us</a></li>
+                    <li><a href="condition.html" target="_blank">Terms and Conditions</a>
+                    </li>
+                    <li><a href="/Home/Index/privacy" target="_blank">Privacy Policy</a></li>
+                </ul>
+            </span>
+        </div>
+
+
+    </section>
+    </div>
+</body>
+
+</html>

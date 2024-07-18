@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  nav  {
+    width: 100%;
+    background-color: #03a1a2;
+    position: relative;
+    height: 50px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: start;
+    height: 46px;
+    padding-top: 15px;
+    padding-left: 200px;
+  }
+
+
+
+  .nav-links ul {
+    background-color: #03a1a2;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .nav-links .logo a {
+    background-color: #d90d0d;
+    width: 200px;
+    margin-top: 0px;
+    padding: 14px 18px;
+  }
+
+
+  .nav-links ul li {
+    display: inline;
+    margin-right: 50px;
+    list-style: none;
+    
+    
+
+  }
+  .nav-links ul li:hover{
+
+    background-color: #d90d0d;
+  }
+  .nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+
+  #login-icon img {
+    width: 20%;
+    height: 15%;
+    padding-left: 0px;
+  }
+  #login-icon a {
+    width: 0%;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 75%;
+    font-size: 14px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    color: #303030;
+    font-weight: 300;
+  }
+  nav .nav > .nav-header {
+    display: inline;
+  }
+  
+  nav .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  nav .nav > .nav-btn {
+    display: none;
+  }
+  
+  nav .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  nav .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  nav .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  nav .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:767.99px) {
+    nav .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+
+    }
+    .nav-links ul{
+        flex-direction: column;
+        background-color: white;
+    }
+    nav .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    nav .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    nav .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    nav .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    nav .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    nav .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    nav .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+    nav .nav > .nav-links > a {
+       
+      }
+  }

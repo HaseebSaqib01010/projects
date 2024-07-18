@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+
+
+<body>
+    <div class="banner">
+
+        <!-- navbar -->
+        <div class="topnav" id="myTopnav">
+            <div class="items">
+                <!-- <img src="C:\Users\Haseeb Ghazi\Downloads\logo-removebg-preview (1).png" alt="" class="img-logo"> -->
+                <a href="" class="" style="margin-top: 0px;"><img src="./SailPoint-Logo-RGB-Color.png" width="150px" height="50px" alt=""></a>
+                <a href="#sentence">Sentence/Word</a>
+                <a href="#celebrity">Celebrity/Artist</a>
+                <a href="#creditcard">Credit Card</a>
+                <a href="#entertainment">Entertainment</a>
+                <a href="#name">Name</a>
+                <a href="#text">Text/Font</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- <div class="searchbox">
+                    <input type="text" placeholder="Search here">
+                    <button class="btn"><i class="fas fa-search" style="color: white;"></i></button>
+
+                </div> -->
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+
+
+                </script>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+
+            <div class="container wrapper">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-menu"
+                        aria-expanded="true">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span></button><a class="navbar-brand visible-xs-block white" href="/">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-wrench"></i>Ocean of Words
+                    </a>
+                </div>
+                <hr style="margin-top: 40px;">
+
+                <div class="navbar-collapse collapse in" id="top-menu" aria-expanded="true">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#sentence">Sentence/Word</a></li>
+                        <li><a href="#celebrity">Celebrity/Artist</a></li>
+                        <li><a href="#creditcard">Credit Card</a></li>
+                        <li><a href="#entertainment">Entertainment</a></li>
+                        <li><a href="#sports">Sports</a></li>
+                        <li class="hidden-sm"><a href="#name">Name</a></li>
+                        <li class="hidden-sm"><a href="#text">Text/Font</a></li>
+                        <div class="searchbox">
+                            <input type="text" placeholder="Search here">
+                            <button class="btn"><i class="fas fa-search" style="color: white;"></i></button>
+
+                        </div>
+
+                </div>
+                </ul>
+            </div>
+
+        </nav>
+        </section>
+        <!-- container  -->
+        <section id="container " style="width: 90%;
+        margin: 40px auto;">
+            <div class="content banner">
+                <div class="left-side">
+
+
+                    <div id="sentence">
+                        <h1>
+                            <a href="/word-generator" target="_blank"><span class="left-most"><i
+                                        class="fa fa-home"></i>Random NFL Player Generator</span></a>
+
+
+                        </h1>
+                        <hr style="margin:12px;">
+                        <div class="form-horizontal">
+                            <form action="/word-generator" style="width: 90%;" method="post">
+                                <div class="form-group">
+                                    <label class="">Conference:</label>
+
+                                    <select name="word_type" style="margin-top: 10px;">
+                                        <option value="0">Random</option>
+                                        <option value="noun">AFC East</option>
+                                        <option value="adjective">AFC West</option>
+                                        <option value="verb">AFC North</option>
+                                        <option value="adverb">AFC South</option>
+                                        <option value="transitive verb">NFC East</option>
+                                        <option value="intransitive verb">NFC East</option>
+                                
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="">Team:</label>
+
+                                    <select name="word_type" style="margin-top: 10px;">
+                                        <option value="0">Random</option>
+                                        <option value="noun">AFC East</option>
+                                        <option value="adjective">AFC West</option>
+                                        <option value="verb">AFC North</option>
+                                        <option value="adverb">AFC South</option>
+                                        <option value="transitive verb">NFC East</option>
+                                        <option value="intransitive verb">NFC East</option>
+                                
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Position:</label>
+
+                                    <select name="word_type" style="margin-top: 10px;">
+                                        <option value="0">Random</option>
+                                        <option value="noun">Noun</option>
+                                        <option value="adjective">Adjective</option>
+                                        <option value="verb">Verb</option>
+                                        <option value="adverb">Adverb</option>
+                                        <option value="transitive verb">Transitive Verb</option>
+                                        <option value="intransitive verb">Intransitive Verb</option>
+                                        <option value="pronoun">Pronoun</option>
+                                        <option value="conjunction">Conjunction</option>
+                                        <option value="preposition">Preposition</option>
+                                        <option value="interjection">Interjection</option>
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group"><label class="col-xs-4  control-label">Side:</label>
+                                  
+                                    <select name="word_type" style="margin-top: 10px;">
+                                        <option value="0">Random</option>
+                                        <option value="noun">Noun</option>
+                                        <option value="adjective">Adjective</option>
+                                        <option value="verb">Verb</option>
+                                        <option value="adverb">Adverb</option>
+                                        <option value="transitive verb">Transitive Verb</option>
+                                        <option value="intransitive verb">Intransitive Verb</option>
+                                        <option value="pronoun">Pronoun</option>
+                                        <option value="conjunction">Conjunction</option>
+                                        <option value="preposition">Preposition</option>
+                                        <option value="interjection">Interjection</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="">Quantity:</label>
+                                
+                                        <input type="text" class="form-control" placeholder="Number(0-9)" name="contain"
+                                            value="">
+                                   </div>
+                         
+
+                                <div class="form-group ">
+                                    <button type="submit" class="sub-btn">Generate</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                    <div class="words-container">
+                        
+                            <div class="player">
+                                <div class="player-inner">
+                                    <p><small>Random NFL Player 1</small></p>
+                                    <p><b><span>John Raine</span></b></p>
+                                    <p><img
+                                            src="https://a.espncdn.com/i/headshots/nfl/players/full/4040771.png"
+                                            alt="John Raine" height="160" loading="lazy"></p>
+                                    <p>Team: <b>Atlanta Falcons</b>(NFC South), Position:
+                                        <b>TE</b>, Number: <b>41</b></p>
+                                    <p>Height: <b>6' 1"</b>, Weight: <b>230 lbs</b></p>
+                                    <p>College: <b>Northwestern</b></p>
+                                </div>
+                            </div>
+                            <div class="player">
+                                <div class="player-inner">
+                                <p class="grey"><small>Random NFL Player 2</small></p>
+                                <p class="text-center font-18"><b><span>Chuba Hubbard</span></b></p>
+                                <p class="text-center"><img
+                                        src="https://a.espncdn.com/i/headshots/nfl/players/full/4241416.png"
+                                        alt="Chuba Hubbard" height="160" loading="lazy"></p>
+                                <p class="text-center grey">Team: <b>Carolina Panthers</b>(NFC South), Position:
+                                    <b>RB</b>, Number: <b>30</b></p>
+                                <p class="text-center grey">Height: <b>6' 1"</b>, Weight: <b>210 lbs</b></p>
+                                <p class="text-center grey">College: <b>Oklahoma State</b></p>
+                            </div>
+                            </div>
+                            <div class="player">
+                                <div class="player-inner">
+                                <p class="grey"><small>Random NFL Player 3</small></p>
+                                <p class="text-center font-18"><b><span>George Kittle</span></b></p>
+                                <p class="text-center"><img
+                                        src="https://a.espncdn.com/i/headshots/nfl/players/full/3040151.png"
+                                        alt="George Kittle" height="160" loading="lazy"></p>
+                                <p class="text-center grey">Team: <b>San Francisco 49ers</b>(NFC West), Position:
+                                    <b>TE</b>, Number: <b>85</b></p>
+                                <p class="text-center grey">Height: <b>6' 4"</b>, Weight: <b>250 lbs</b></p>
+                                <p class="text-center grey">College: <b>Iowa</b></p>
+                            </div>
+                            </div>
+                            <div class="player">
+                                <div class="player-inner">
+                                <p class="grey"><small>Random NFL Player 4</small></p>
+                                <p class="text-center font-18"><b><span>Justin Jackson</span></b></p>
+                                <p class="text-center"><img
+                                        src="https://a.espncdn.com/i/headshots/nfl/players/full/3116136.png"
+                                        alt="Justin Jackson" height="160" loading="lazy"></p>
+                                <p class="text-center grey">Team: <b>Detroit Lions</b>(NFC North), Position: <b>RB</b>,
+                                    Number: <b>42</b></p>
+                                <p class="text-center grey">Height: <b>6' 0"</b>, Weight: <b>199 lbs</b></p>
+                                <p class="text-center grey">College: <b>Northwestern</b></p>
+                            </div>
+                            </div>
+                            <div class="player">
+                                <div class="player-inner">
+                                <p class="grey"><small>Random NFL Player 5</small></p>
+                                <p class="text-center font-18"><b><span>Jameson Williams</span></b></p>
+                                <p class="text-center"><img
+                                        src="https://a.espncdn.com/i/headshots/nfl/players/full/4426388.png"
+                                        alt="Jameson Williams" height="160" loading="lazy"></p>
+                                <p class="text-center grey">Team: <b>Detroit Lions</b>(NFC North), Position: <b>WR</b>,
+                                    Number: <b>9</b></p>
+                                <p class="text-center grey">Height: <b>6' 1"</b>, Weight: <b>180 lbs</b></p>
+                                <p class="text-center grey">College: <b>Alabama</b></p>
+                            </div>
+                            </div>
+                            <div class="player">
+                                <div class="player-inner">
+                                <p class="grey"><small>Random NFL Player 6</small></p>
+                                <p class="text-center font-18"><b><span>DeMarcus Lawrence</span></b></p>
+                                <p class="text-center"><img class="player-image"
+                                        src="https://a.espncdn.com/i/headshots/nfl/players/full/16802.png"
+                                        alt="DeMarcus Lawrence" height="160" loading="lazy"></p>
+                                <p class="text-center grey">Team: <b>Dallas Cowboys</b>(NFC East), Position: <b>DE</b>,
+                                    Number: <b>90</b></p>
+                                <p class="text-center grey">Height: <b>6' 3"</b>, Weight: <b>265 lbs</b></p>
+                                <p class="text-center grey">College: <b>Boise State</b></p>
+                            </div>
+                         
+                    
+                    </div>
+
+                    <button class="btn-blue"> New Random NFC Players Generator</button>
+                    </div>
+                    
+
+                </div>
+                <div class="right-side">
+                    <div class="popular">
+                        <div class="list-group">
+                            <!-- <p class="right-list-title"><i class="fa fa-fire"></i>Popular</p> -->
+                            <ul>
+                                <li theLittleDetails="Click here" style="color:#4A55A2 ;">Popular</li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 " ;>Number Generator</li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 ">Title Generator</li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Random Sentence Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">Anime
+                                        Character
+                                        Generator
+
+                                    </a>
+                                </li>
+                                <li theLittleDetails="Click Here">
+                                    <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                        target="_blank">PNG Text
+                                        Generator</a>
+
+                                    </a>
+                                </li>
+
+
+                                <li theLittleDetails="Click here" style="color:#4A55A2 " ;>Others</li>
+                                <ul>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Random Sentence Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">Anime
+                                            Character
+                                            Generator
+
+                                        </a>
+                                    </li>
+                                    <li theLittleDetails="Click Here">
+                                        <a href="https://www.randomsentencegen.com/" class="list-group-item"
+                                            target="_blank">PNG Text
+                                            Generator</a>
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    </section>
+    <section id="home-foot">
+        <div class="container">
+
+            <span class="left-most">Copyright © 2023 CoolGenerator.com All rights reserved.</span>
+
+            <span class="right-most">
+                <ul class="list-unstyled pull-right clearfix state">
+                    <li><a href="mailto:coolgenerator@outlook.com" target="_blank">Contact Us</a></li>
+                    <li><a href="./condition.html" target="_blank">Terms and Conditions</a>
+                    </li>
+                    <li><a href="/Home/Index/privacy" target="_blank">Privacy Policy</a></li>
+                </ul>
+            </span>
+        </div>
+
+
+    </section>
+    </div>
+</body>
+
+</html>

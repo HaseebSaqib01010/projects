@@ -1,0 +1,50 @@
+.rightBar{
+    flex: 3.5;
+    margin-left: 25px;
+}
+.rightBarWrapper{
+    padding: 20px 20px 0 0;
+
+}
+.birthdayImage{
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+.rightBarAd{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.onlineFriendsList{
+    list-style: none;
+}
+.profileImgContainer .profileImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.rightBarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.profileImgContainer {
+    margin-right: 10px;
+    position: relative;
+}
+.onlineBadge{
+    background-color: green;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    border: 2px solid white;
+}
+.title{
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
